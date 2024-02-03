@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section>
+        <div class="on-off">
+            <div id="main">
+                <div id="on">
+                    <div id="o">
+
+                    </div>
+                    <div id="o2">
+                        <div id="f1"></div>
+                        <div id="f2"></div>
+                        <div id="f3"></div>
+
+                    </div>
+                </div>
+                <div class="n">
+                    <div id="n1"></div>
+                    <div id="n2"></div>
+                    <div id="n3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+        let on = document.getElementById('on')
+        let obutton = document.getElementById('o')
+        let fbutton = document.getElementById('o2')
+        let n1 = document.getElementById('n1')
+        let n2 = document.getElementById('n2')
+        let n3 = document.getElementById('n3')
+
+        let f1 = document.getElementById('f1')
+        let f2 = document.getElementById('f2')
+        let f3 = document.getElementById('f3')
+
+        obutton.addEventListener('click', function(){
+            
+            if(obutton.style.marginLeft == '100px'){
+                on.style.background = 'red'
+                obutton.style.marginLeft = 0+'px'
+                // n2.style.rotate = 0 + 'deg'
+                obutton.style.background = 'red'
+                setTimeout(function run(){
+                    fbutton.style.display = 'flex'
+                }, 600)
+
+
+
+                n1.style.background = 'red'
+                
+                n3.style.left =  -30+'px'
+                n3.style.rotate =  90+'deg'
+                n3.style.background = 'red'
+                
+
+                n2.style.top =  -43 + 'px'
+                n2.style.left =  10 + 'px'
+                n2.style.rotate = 90+'deg'
+                n2.style.height = 110+'px'
+                n2.style.background = 'red'
+                
+
+
+
+
+            }else{
+        
+                on.style.background = 'green'
+                obutton.style.marginLeft = 100+'px'
+                fbutton.style.display = 'none'
+
+
+                
+                obutton.style.background = 'green'
+
+                n1.style.background = 'green'
+                // n2.style.transform =  'scaleX(-1)'
+                
+                n3.style.left =  -7+'px'
+                n3.style.rotate =  0+'deg'
+                n3.style.background = 'green'
+                // n3.style.marginLeft = 5+'px'
+
+                n2.style.top =  -6+'px'
+                n2.style.rotate = -39+'deg'
+                n2.style.left = -4+'px'
+                n2.style.height = 120+'px'
+                n2.style.background = 'green'
+
+                
+            }
+        })
+
+    </script>
+
+
+
+
+
+    
+</body>
+</html>
